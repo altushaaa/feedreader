@@ -60,8 +60,8 @@ $(function() {
         */
 
         it('are defined', function() {
-            expect(allFeeds).toBeDefined();
-            expect(allFeeds.length).not.toBe(0);
+            var status = $('body').hasClass('menu-hidden');
+            expect(status).toBe(true);
         });
     });
 
